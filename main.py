@@ -199,7 +199,6 @@ def listar_emprestimos_por_usuario():
         for e in atuais:
             print(e)
 
-    # Funcionalidade adicional: histórico completo
     print(f"\n=== HISTÓRICO COMPLETO DE EMPRÉSTIMOS DE {usuario.nome.upper()} ===")
     historico = [e for e in emprestimos if e.usuario == usuario]
     if not historico:
@@ -210,7 +209,6 @@ def listar_emprestimos_por_usuario():
     print()
 
 
-# ---------- Menu Principal ----------
 def menu():
     while True:
         print("=" * 50)
